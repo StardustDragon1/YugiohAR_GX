@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - TileManager
+  - MilleniumItem
+  - MI0
+  - MI1
+  - MI2
+  - MI3
+  - MI4
+  - MI5
+  - MI6
+  - MI7
+  - MI8
+  - MI9
+  - MI10
+  - MI11
+  - MI12
+  - MI13
+  - MI14
+  - MI15
+  - MI16
+  - MI17
+  - MI18
+  - MI19
+  - MI20
+  - Obelisk
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
