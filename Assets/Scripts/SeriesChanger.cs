@@ -57,12 +57,17 @@ public class SeriesChanger : MonoBehaviour
     {
        PlayerPrefs.SetString("Series", "DM");
        series_panel.gameObject.SetActive(false);
+        GX_canvas.enabled = false;
+        DM_canvas.enabled = true;
     }
 
     public void GXClicked()
     {
         PlayerPrefs.SetString("Series", "GX");
         series_panel.gameObject.SetActive(false);
+        GX_canvas.enabled = true;
+        DM_canvas.enabled = false;
+
     }
 
 
