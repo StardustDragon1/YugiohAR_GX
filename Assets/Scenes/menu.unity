@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 66416149}
   m_Layer: 5
   m_Name: BACKGROUND
-  m_TagString: Untagged
+  m_TagString: menubg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 734992668}
   m_Layer: 5
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: menubg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1952,6 +1952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe4da0159eeb7e469b4c222d560a240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DM_theme: {fileID: 8300000, guid: cbcf4a72867eb834e88c2db074164599, type: 3}
+  GX_theme: {fileID: 8300000, guid: b00c21c4282715b4ba049b1ead70247e, type: 3}
 --- !u!82 &856936473
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3248,6 +3250,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553719107}
   m_CullTransparentMesh: 0
+--- !u!1 &1571264693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571264695}
+  - component: {fileID: 1571264694}
+  m_Layer: 0
+  m_Name: SeasonChange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1571264694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571264693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6e07ed878066844a7a622696f3ec49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logo_main: {fileID: 1667752025}
+  logo_play: {fileID: 1987938430}
+  main_bg: {fileID: 2066314329}
+  play_bg: {fileID: 2001773029}
+  options_bg: {fileID: 66416149}
+  collection_bg: {fileID: 2016793811}
+  full_bg: {fileID: 734992668}
+  gxbg: {fileID: 21300000, guid: 1fcbcb973bce592479a56e33061f8d73, type: 3}
+  dmbg: {fileID: 21300000, guid: 8e2a5e29c689f9e418ca43fda849b833, type: 3}
+  DM_logo: {fileID: 21300000, guid: da20c0d6f9cab61418a695eea7863215, type: 3}
+  GX_logo: {fileID: 21300000, guid: 039417bac5f95d54fade6f78a53949d0, type: 3}
+--- !u!4 &1571264695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571264693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 297.19638, y: 144.7785, z: -903.375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582005431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,7 +4617,7 @@ GameObject:
   - component: {fileID: 2001773028}
   m_Layer: 5
   m_Name: BACKGROUND
-  m_TagString: Untagged
+  m_TagString: menubg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4598,7 +4654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 0.4736759
+  m_AspectRatio: 0.56249166
 --- !u!114 &2001773029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4650,7 +4706,7 @@ GameObject:
   - component: {fileID: 2016793811}
   m_Layer: 5
   m_Name: BACKGROUND
-  m_TagString: Untagged
+  m_TagString: menubg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4878,7 +4934,7 @@ GameObject:
   - component: {fileID: 2066314328}
   m_Layer: 5
   m_Name: BACKGROUND
-  m_TagString: Untagged
+  m_TagString: menubg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4915,7 +4971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 0.54828817
+  m_AspectRatio: 0.57520205
 --- !u!114 &2066314329
 MonoBehaviour:
   m_ObjectHideFlags: 0
