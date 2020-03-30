@@ -4903,9 +4903,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   series_panel: {fileID: 1099448703}
+  series_panel_gx: {fileID: 110482232}
   locked: {fileID: 8339229}
-  DM_canvas: {fileID: 0}
-  GX_canvas: {fileID: 0}
+  locked_gx: {fileID: 1498439808}
+  DM_canvas: {fileID: 904329415}
+  GX_canvas: {fileID: 768759785}
 --- !u!4 &1794678849
 Transform:
   m_ObjectHideFlags: 0

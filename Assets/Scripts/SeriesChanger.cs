@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class SeriesChanger : MonoBehaviour
 {
     public GameObject series_panel;
+    public GameObject series_panel_gx;
     public Image locked;
+    public Image locked_gx;
     public Canvas DM_canvas;
     public Canvas GX_canvas;
 
@@ -17,9 +19,11 @@ public class SeriesChanger : MonoBehaviour
         if(googleSignIn.story_progress>=7)
         {
             locked.enabled = false;
+            locked_gx.enabled = false;
         } else
         {
-            locked.enabled = true;
+            locked.enabled = false;
+            locked_gx.enabled = false;
         }
 
         if(PlayerPrefs.GetString("Series") == "GX")
@@ -44,7 +48,14 @@ public class SeriesChanger : MonoBehaviour
    
     public void changeSeriesButton()
     {
-        series_panel.gameObject.SetActive(true);
+        if (PlayerPrefs.GetString("Series") == "GX")
+        {
+            series_panel_gx.gameObject.SetActive(true);
+        } else
+        {
+            series_panel.gameObject.SetActive(true);
+        }
+         
     }
 
 
@@ -64,7 +75,7 @@ public class SeriesChanger : MonoBehaviour
     public void GXClicked()
     {
         PlayerPrefs.SetString("Series", "GX");
-        series_panel.gameObject.SetActive(false);
+        series_panel_gx.gameObject.SetActive(false);
         GX_canvas.enabled = true;
         DM_canvas.enabled = false;
 
