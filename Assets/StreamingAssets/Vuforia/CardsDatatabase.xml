@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="stardust" size="10.000000 14.584323" />
+    <ImageTarget name="archfiend" size="10.000000 14.584323" />
+    <ImageTarget name="black_luster" size="10.000000 14.492754" />
+    <ImageTarget name="black_rose" size="10.000000 14.500000" />
+    <ImageTarget name="cyber_end" size="10.000000 14.589665" />
+    <ImageTarget name="d_magician_girl" size="10.000000 14.563107" />
+    <ImageTarget name="plasma" size="10.000000 14.584323" />
+    <ImageTarget name="elemental_hero" size="10.000000 14.708738" />
+    <ImageTarget name="utopia" size="10.000000 14.610390" />
+    <ImageTarget name="winged_dragon" size="10.000000 15.125448" />
+    <ImageTarget name="drill" size="10.000000 14.836449" />
+    <ImageTarget name="yubel" size="10.000000 14.720000" />
+    <ImageTarget name="golem" size="10.000000 14.501992" />
+    <ImageTarget name="red_eyes" size="10.000000 14.577259" />
+    <ImageTarget name="rainbow" size="10.000000 14.650146" />
+    <ImageTarget name="gaia2" size="5.000000 7.281553" />
+    <ImageTarget name="skull" size="5.000000 7.258065" />
+    <ImageTarget name="obelisk" size="5.000000 7.248804" />
+    <ImageTarget name="neos" size="5.000000 7.292161" />
+    <ImageTarget name="gaia" size="5.000000 7.292161" />
+    <ImageTarget name="dark_magician" size="5.000000 7.292161" />
+    <ImageTarget name="Blue_Eyes_White_Dragon" size="5.000000 7.250000" />
+  </Tracking>
+</QCARConfig>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "505464665583",
+    "firebase_url": "https://yu-gi-oh-ar.firebaseio.com",
+    "project_id": "yu-gi-oh-ar",
+    "storage_bucket": "yu-gi-oh-ar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505464665583:android:cc8dd859b47ff5c7",
+        "android_client_info": {
+          "package_name": "sk.chrisfodor.yugiohar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505464665583-63pivp2e4f3ec8o2t1n5jvhhmhl5s34c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sk.chrisfodor.yugiohar",
+            "certificate_hash": "8c83930a08ed1df0efab8801f1e135fb26d03525"
+          }
+        },
+        {
+          "client_id": "505464665583-4ohbreuk1g2e3g24bt9kg62q9c1t2mgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw8muB1-VHt21gZ0LDskhfSTqe1KLE5G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505464665583-4ohbreuk1g2e3g24bt9kg62q9c1t2mgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
