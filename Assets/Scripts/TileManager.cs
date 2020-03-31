@@ -23,6 +23,11 @@ public class TileManager : MonoBehaviour {
 	[SerializeField]
 	private GameObject background;
 
+
+	public Image background_image;
+	public Sprite gx_sprite;
+	public Sprite dm_sprite;
+
 	private float oldLat = 0f, oldLon = 0f;
 	private float lat = 0f, lon = 0f;
 
@@ -44,7 +49,18 @@ public class TileManager : MonoBehaviour {
 
 	IEnumerator Start()
 	{
-		while (!Input.location.isEnabledByUser) {
+
+		if (PlayerPrefs.GetString("Series") == "GX")
+		{
+			background_image.sprite = gx_sprite;
+		} else
+		{
+			background_image.sprite = dm_sprite;
+		}
+
+
+
+			while (!Input.location.isEnabledByUser) {
 			print ("Activate gps");
 			yield return new WaitForSeconds (1f);
 		}

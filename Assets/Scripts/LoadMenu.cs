@@ -49,7 +49,7 @@ public class LoadMenu : MonoBehaviour
             }
 
 
-            if (!ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().isPlaying)
+            if (ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>() != null && !ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().isPlaying)
             {
                 ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().Play();
             }

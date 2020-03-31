@@ -24,24 +24,24 @@ EditorBuildSettings:
     path: Assets/Scenes/StoryScenes/story_dialogues.unity
     guid: d975583b5761a2743a075ce5c7b3c39b
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/story_bls.unity
+    path: Assets/Scenes/StoryScenes/DM_levels/story_bls.unity
     guid: 41b45e259a4639f4ca7aa17981ae164a
   - enabled: 1
     path: Assets/Scenes/StoryScenes/story_select.unity
     guid: fb3857560fd1b9f45954c45d73e40866
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/story_gaia.unity
+    path: Assets/Scenes/StoryScenes/DM_levels/story_gaia.unity
     guid: d24cdeccde8aba248b318d9a4314b6fb
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/story_obelisk.unity
+    path: Assets/Scenes/StoryScenes/DM_levels/story_obelisk.unity
     guid: 46dedc8cb764c2d4bbfb7da8a64f4ffb
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/story_skull.unity
+    path: Assets/Scenes/StoryScenes/DM_levels/story_skull.unity
     guid: 3e10586485765154a9e7f874ad652e3e
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/story_red_eyes.unity
+    path: Assets/Scenes/StoryScenes/DM_levels/story_red_eyes.unity
     guid: f9199007751cbe9498286a4de51e53d3
   - enabled: 1
-    path: Assets/Scenes/StoryScenes/story_final.unity
+    path: Assets/Scenes/StoryScenes/DM_levels/story_final.unity
     guid: 0472729796799074aa8ca400923a69a8
   m_configObjects: {}
