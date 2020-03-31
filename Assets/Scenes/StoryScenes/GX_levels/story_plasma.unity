@@ -150,7 +150,7 @@ Transform:
   - {fileID: 2129307259}
   - {fileID: 1909950991}
   - {fileID: 5006512735805215411}
-  - {fileID: 407524038}
+  - {fileID: 94614923}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -557,7 +557,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 836c5702f97ae0b46af0e955c671f80a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 86dd1355dc401914aba251784c6764c1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -657,6 +657,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &94614922
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1453800}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy_Plasma
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.03575083
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9345449
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.09822462
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.34014645
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cc56216786497b4784bead22cd90107, type: 3}
+--- !u!4 &94614923 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4cc56216786497b4784bead22cd90107,
+    type: 3}
+  m_PrefabInstance: {fileID: 94614922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &94614924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4cc56216786497b4784bead22cd90107,
+    type: 3}
+  m_PrefabInstance: {fileID: 94614922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &94614925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94614924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906cb31aa8abc61478a5781b4b45b7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: Destiny Hero Plasma
+  unitLevel: 8
+  damage: 3400
+  maxHP: 24000
+  currentHP: 24000
+  maxMana: 100
+  currentMana: 100
+  special_mana_cost: 90
+  isDefending: 0
 --- !u!1 &168418138
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,123 +1090,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &407524037
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1453800}
-    m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy_AGG
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.03575083
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9345449
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.09822462
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.34014645
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 220
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2e4151951ffdb78438bd0e5fd5ce1095, type: 3}
---- !u!4 &407524038 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-    type: 3}
-  m_PrefabInstance: {fileID: 407524037}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &407524039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2e4151951ffdb78438bd0e5fd5ce1095,
-    type: 3}
-  m_PrefabInstance: {fileID: 407524037}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &407524040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407524039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906cb31aa8abc61478a5781b4b45b7e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitName: Ancient Gear Golem
-  unitLevel: 8
-  damage: 3000
-  maxHP: 22000
-  currentHP: 22000
-  maxMana: 100
-  currentMana: 100
-  special_mana_cost: 50
-  isDefending: 0
 --- !u!1 &426461683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,12 +1731,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   player: {fileID: 2045397383}
-  enemy: {fileID: 407524039}
-  story_chapter: 8
+  enemy: {fileID: 94614924}
+  story_chapter: 10
   scaleall: {fileID: 1453799}
   specialattack: {fileID: 233256650}
   dialogueText2: {fileID: 2087225491}
-  enemy_special_attack: Mechanized Melee
+  enemy_special_attack: Plasma Roar
   player_special_attack: Skydive Scorcher
   dialogueText: {fileID: 1849884128}
   actionbar: {fileID: 554711022}
@@ -4495,6 +4495,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592707428563945046, guid: 6332fb213f044ed47ad0ac9ed409fba0,
+        type: 3}
+      propertyPath: maxHP
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592707428563945046, guid: 6332fb213f044ed47ad0ac9ed409fba0,
+        type: 3}
+      propertyPath: currentHP
+      value: 20000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6332fb213f044ed47ad0ac9ed409fba0, type: 3}

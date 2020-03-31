@@ -3344,8 +3344,8 @@ MonoBehaviour:
   unitName: Elemental Hero Flame Wingman
   unitLevel: 6
   damage: 2100
-  maxHP: 12000
-  currentHP: 12000
+  maxHP: 20000
+  currentHP: 20000
   maxMana: 100
   currentMana: 100
   special_mana_cost: 20
