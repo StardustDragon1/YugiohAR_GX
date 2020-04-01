@@ -139,4 +139,66 @@ public class Chapters : MonoBehaviour
     }
 
 
+
+    public void onGXFirstChapter()
+    {
+        if (googleSignIn.story_progress >= 9)
+        {
+            SceneManager.LoadScene(13);
+        }
+    }
+
+
+
+
+    public void onGXSecondChapter()
+    {
+        if (googleSignIn.story_progress >= 10)
+        {
+            SceneManager.LoadScene(14);
+        }
+    }
+
+
+    public void onGXThirdChapter()
+    {
+        if (googleSignIn.story_progress >= 11)
+        {
+            SceneManager.LoadScene(15);
+        }
+    }
+
+
+
+    public void onGXFourthChapter()
+    {
+        if (googleSignIn.story_progress >= 12)
+        {
+            SceneManager.LoadScene(16);
+        }
+    }
+
+
+    public void onGXFifthChapter()
+    {
+        if (googleSignIn.story_progress >= 13)
+        {
+            SceneManager.LoadScene(17);
+        }
+    }
+
+
+    public void onGXSixthChapter()
+    {
+        if (googleSignIn.story_progress >= 14)
+        {
+            SceneManager.LoadScene(18);
+        }
+    }
+
+
+
+
+
+
 }

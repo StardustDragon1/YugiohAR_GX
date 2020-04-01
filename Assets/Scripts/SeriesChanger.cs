@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class SeriesChanger : MonoBehaviour
@@ -75,9 +76,17 @@ public class SeriesChanger : MonoBehaviour
     public void GXClicked()
     {
         PlayerPrefs.SetString("Series", "GX");
-        series_panel_gx.gameObject.SetActive(false);
-        GX_canvas.enabled = true;
-        DM_canvas.enabled = false;
+        if(googleSignIn.story_progress == 7)
+        {
+            googleSignIn.story_progress++;
+            SceneManager.LoadScene(5);
+        } else
+        {
+            series_panel_gx.gameObject.SetActive(false);
+            GX_canvas.enabled = true;
+            DM_canvas.enabled = false;
+        }
+     
 
     }
 

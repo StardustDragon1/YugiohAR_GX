@@ -220,7 +220,10 @@ public class BattleSystem : MonoBehaviour
                 RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
             });
             }
-            if (googleSignIn.story_progress == 7)
+          
+  
+
+            if (googleSignIn.story_progress == 7 || googleSignIn.story_progress == 15)
             {
                 SceneManager.LoadScene(7);
             }
@@ -228,13 +231,15 @@ public class BattleSystem : MonoBehaviour
             {
                 SceneManager.LoadScene(5);
             }
+
+
         } 
         else if(state == BattleState.LOST)
         {
             dialogueText.text = "You were defeated!";
             dialogueText2.text = "You were defeated!";
             yield return new WaitForSeconds(1f);
-            if (googleSignIn.story_progress == 7)
+            if (googleSignIn.story_progress == 7 || googleSignIn.story_progress == 15)
             {
                 SceneManager.LoadScene(7);
             }

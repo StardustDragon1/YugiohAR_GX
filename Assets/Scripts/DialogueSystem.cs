@@ -116,6 +116,48 @@ public class DialogueSystem : MonoBehaviour
         }
 
 
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 8 && !videoplaying)
+        {
+            StartCoroutine(GXFirstChapter());
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 9 && !videoplaying)
+        {
+            StartCoroutine(GXSecondChapter());
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 10 && !videoplaying)
+        {
+            StartCoroutine(GXThirdChapter());
+        }
+
+
+
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 11 && !videoplaying)
+        {
+            StartCoroutine(GXFourthChapter());
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 12 && !videoplaying)
+        {
+            StartCoroutine(GXFifthChapter());
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 13 && !videoplaying)
+        {
+            StartCoroutine(GXSixthChapter());
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 14 && !videoplaying)
+        {
+            StartCoroutine(GXSeventhChapter());
+        }
+
     }
 
 
@@ -570,6 +612,458 @@ public class DialogueSystem : MonoBehaviour
                 break;
         }
     }
+
+
+
+    public IEnumerator GXFirstChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("crowler");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Oh, I am already late for school, I won't be the next dueling champ this way";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Vellian Crowler: Slacker, you will never get to Dueling Academy, we are not accepting more students";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Oh come on prof, are you scared?";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Vellian Crowler: Hah, I will make an example out of you!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 9;
+                    googleSignIn.story_progress = 9;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
+
+
+    public IEnumerator GXSecondChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("dmg");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Huh? Dueling Spirit Celebration? What is this?";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Unknown Spirit: It´s once every year, when the connection to the Spirit World is stronger";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Spirit World? Who are you?";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Dark Magician Girl: I am the Dark Magician Girl, care to duel?";
+                diag_inc++;
+                break;
+
+            case 5:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Jaden Yuki: Sure, I am always down. Get your game on!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 10;
+                    googleSignIn.story_progress = 10;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
+
+
+    public IEnumerator GXThirdChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("aster");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: So we are in the finals now";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Aster Phoenix: Jaden, I have to win this for my father!";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Father?";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Aster Phoenix: My father was a card artist and he was murdered";
+                diag_inc++;
+                break;
+
+            case 5:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Aster Phoenix: This is the only way to find out who did it!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 11;
+                    googleSignIn.story_progress = 11;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
+    public IEnumerator GXFourthChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("syrus");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Oh hey, what´s up guys?";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Syrus Truesdale: Jaden! You´re alive, you returned!";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Well, I´ve never been gone, was I?";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Syrus Truesdale: Time has passed since your dissaperance";
+                diag_inc++;
+                break;
+
+            case 5:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Syrus Truesdale: I´ve been promoted to Ra Yellow, let me show you my new skills!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 12;
+                    googleSignIn.story_progress = 12;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
+
+    public IEnumerator GXFifthChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("atticus");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Here we go, this war on Duel Academy ends now!";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Nightshroud: The Shadow Riders will take this island from you";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: I won't let that happen";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Nightshroud: Then I will send you to the Shadow Realm";
+                diag_inc++;
+                break;
+
+            case 5:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Nightshroud: And soon we will awaken all of the Sacred Beasts!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 13;
+                    googleSignIn.story_progress = 13;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
+
+
+
+    public IEnumerator GXSixthChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("yubel_dl");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Who are you?";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Yubel: Don't you remember? We used to be one!";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Huh, I remember, when I was a kid. I thought you wasn´t real!";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Yubel: Oh I was real, and you abandoned me!";
+                diag_inc++;
+                break;
+
+            case 5:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Yubel: Now you will suffer!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 14;
+                    googleSignIn.story_progress = 14;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
+    public IEnumerator GXSeventhChapter()
+    {
+
+        switch (diag_inc)
+        {
+            case 0:
+                var music = PlayerPrefs.GetString("Music", "Default value");
+                if (music == "yes")
+                {
+                    audioSource.Play();
+                }
+                protagonist.sprite = Resources.Load<Sprite>("jaden");
+                antagonist.sprite = Resources.Load<Sprite>("yubel_dl");
+                antagonist.gameObject.SetActive(true);
+                protagonist.gameObject.SetActive(true);
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: I am sorry Yubel, it is my fault you feel abandoned";
+                diag_inc++;
+                break;
+            case 1:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
+                diag.text = "Yubel: Do you mean it?";
+                diag_inc++;
+                break;
+            case 2:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Jaden Yuki: Yes Yubel, deep down I tried to hide from you, but not anymore";
+                diag_inc++;
+                break;
+            case 3:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Yubel: That's good Jaden";
+                diag_inc++;
+                break;
+
+            case 5:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
+                diag.text = "Yubel: We will be one once again!";
+                diag_inc++;
+
+                Player player = new Player();
+
+                yield return new WaitForSeconds(1f);
+                RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
+                {
+                    player.story_progress = 15;
+                    googleSignIn.story_progress = 15;
+                    if (music_pref == "yes")
+                    {
+                        audioSource.Stop();
+                    }
+                    chapterControl();
+                    RestClient.Put("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json", player);
+                });
+                break;
+        }
+    }
+
+
 
 
 

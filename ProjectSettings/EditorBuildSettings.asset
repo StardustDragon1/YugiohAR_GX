@@ -44,4 +44,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StoryScenes/DM_levels/story_final.unity
     guid: 0472729796799074aa8ca400923a69a8
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/GX_levels/story_golem.unity
+    guid: 3c50460a5039ee44e94a2a6e06555ead
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/GX_levels/story_dmg.unity
+    guid: 892a8ecb3306e9d42909bcf0cea73541
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/GX_levels/story_plasma.unity
+    guid: 02dbf2a504785a944a04ecb72903daef
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/GX_levels/story_drill.unity
+    guid: 88d1b6db36955aa4b95d95b6735069bf
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/GX_levels/story_ra.unity
+    guid: a1d5a58a63821c64694e28aab737d7a3
+  - enabled: 1
+    path: Assets/Scenes/StoryScenes/GX_levels/story_yubel.unity
+    guid: a512628f91905224c984967ff708b8d3
   m_configObjects: {}
