@@ -15,6 +15,10 @@ public class SeriesChanger : MonoBehaviour
     public Canvas GX_canvas;
 
 
+    public AudioClip DM_theme;
+    public AudioClip GX_theme;
+
+
     void Start()
     {
         if(googleSignIn.story_progress>=7)
@@ -23,8 +27,8 @@ public class SeriesChanger : MonoBehaviour
             locked_gx.enabled = false;
         } else
         {
-            locked.enabled = false;
-            locked_gx.enabled = false;
+            locked.enabled = true;
+            locked_gx.enabled = true;
         }
 
         if(PlayerPrefs.GetString("Series") == "GX")
@@ -41,10 +45,6 @@ public class SeriesChanger : MonoBehaviour
     }
 
   
-    void Update()
-    {
-        
-    }
 
    
     public void changeSeriesButton()
@@ -65,9 +65,21 @@ public class SeriesChanger : MonoBehaviour
         series_panel.gameObject.SetActive(false);
     }
 
+
+
+    public void cancelGXButton()
+    {
+        series_panel_gx.gameObject.SetActive(false);
+    }
+
     public void DuelMonstersClicked()
     {
-       PlayerPrefs.SetString("Series", "DM");
+
+        ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().Stop();
+        ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().clip = DM_theme;
+
+
+        PlayerPrefs.SetString("Series", "DM");
        series_panel.gameObject.SetActive(false);
         GX_canvas.enabled = false;
         DM_canvas.enabled = true;
@@ -75,16 +87,24 @@ public class SeriesChanger : MonoBehaviour
 
     public void GXClicked()
     {
-        PlayerPrefs.SetString("Series", "GX");
-        if(googleSignIn.story_progress == 7)
+        if (googleSignIn.story_progress >= 7)
         {
-            googleSignIn.story_progress++;
-            SceneManager.LoadScene(5);
-        } else
-        {
-            series_panel_gx.gameObject.SetActive(false);
-            GX_canvas.enabled = true;
-            DM_canvas.enabled = false;
+            ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().Stop();
+            ThemeSongScript.Instance.gameObject.GetComponent<AudioSource>().clip = GX_theme;
+
+
+            PlayerPrefs.SetString("Series", "GX");
+            if (googleSignIn.story_progress == 7)
+            {
+                googleSignIn.story_progress++;
+                SceneManager.LoadScene(5);
+            }
+            else
+            {
+                series_panel_gx.gameObject.SetActive(false);
+                GX_canvas.enabled = true;
+                DM_canvas.enabled = false;
+            }
         }
      
 

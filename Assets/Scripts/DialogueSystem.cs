@@ -15,7 +15,13 @@ public class DialogueSystem : MonoBehaviour
     public Image antagonist;
     public Canvas dialogueCanvas;
     public Text diag;
-    private string music_pref; 
+    private string music_pref;
+
+    public Image background;
+    public Sprite gx_sprite;
+    public Sprite dm_sprite;
+
+
 
     public AudioSource audioSource;
 
@@ -31,7 +37,18 @@ public class DialogueSystem : MonoBehaviour
 
     void Start()
     {
-        music_pref  = PlayerPrefs.GetString("Music", "Default value");
+        if (PlayerPrefs.GetString("Series") == "GX")
+        {
+            diag.text = "*Somewhere in Dueling Academy*";
+            background.sprite = gx_sprite;
+        } else
+        {
+            diag.text = "*Somewhere in Duelist Kingdom*";
+            background.sprite = dm_sprite;
+        }
+
+
+            music_pref  = PlayerPrefs.GetString("Music", "Default value");
         diag_inc = 0;
 
         if(googleSignIn.story_progress == 1)
@@ -648,8 +665,8 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Vellian Crowler: Hah, I will make an example out of you!";
                 diag_inc++;
 
@@ -658,8 +675,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 9;
-                    googleSignIn.story_progress = 9;
+                    player.story_progress = 8;
+                    googleSignIn.story_progress = 8;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();
@@ -707,15 +724,14 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Dark Magician Girl: I am the Dark Magician Girl, care to duel?";
                 diag_inc++;
                 break;
-
-            case 5:
-                antagonist.color = Color.white;
-                protagonist.color = Color.black;
+            case 4:
+                antagonist.color = Color.black;
+                protagonist.color = Color.white;
                 diag.text = "Jaden Yuki: Sure, I am always down. Get your game on!";
                 diag_inc++;
 
@@ -724,8 +740,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 10;
-                    googleSignIn.story_progress = 10;
+                    player.story_progress = 9;
+                    googleSignIn.story_progress = 9;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();
@@ -773,15 +789,14 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Aster Phoenix: My father was a card artist and he was murdered";
                 diag_inc++;
                 break;
-
-            case 5:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+            case 4:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Aster Phoenix: This is the only way to find out who did it!";
                 diag_inc++;
 
@@ -790,8 +805,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 11;
-                    googleSignIn.story_progress = 11;
+                    player.story_progress = 10;
+                    googleSignIn.story_progress = 10;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();
@@ -837,15 +852,14 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Syrus Truesdale: Time has passed since your dissaperance";
                 diag_inc++;
                 break;
-
-            case 5:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+            case 4:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Syrus Truesdale: I´ve been promoted to Ra Yellow, let me show you my new skills!";
                 diag_inc++;
 
@@ -854,8 +868,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 12;
-                    googleSignIn.story_progress = 12;
+                    player.story_progress = 11;
+                    googleSignIn.story_progress = 11;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();
@@ -902,15 +916,14 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Nightshroud: Then I will send you to the Shadow Realm";
                 diag_inc++;
                 break;
-
-            case 5:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+            case 4:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Nightshroud: And soon we will awaken all of the Sacred Beasts!";
                 diag_inc++;
 
@@ -919,8 +932,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 13;
-                    googleSignIn.story_progress = 13;
+                    player.story_progress = 12;
+                    googleSignIn.story_progress = 12;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();
@@ -969,15 +982,14 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Yubel: Oh I was real, and you abandoned me!";
                 diag_inc++;
                 break;
-
-            case 5:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+            case 4:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Yubel: Now you will suffer!";
                 diag_inc++;
 
@@ -986,8 +998,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 14;
-                    googleSignIn.story_progress = 14;
+                    player.story_progress = 13;
+                    googleSignIn.story_progress = 13;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();
@@ -1033,15 +1045,15 @@ public class DialogueSystem : MonoBehaviour
                 diag_inc++;
                 break;
             case 3:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Yubel: That's good Jaden";
                 diag_inc++;
                 break;
 
-            case 5:
-                antagonist.color = Color.black;
-                protagonist.color = Color.white;
+            case 4:
+                antagonist.color = Color.white;
+                protagonist.color = Color.black;
                 diag.text = "Yubel: We will be one once again!";
                 diag_inc++;
 
@@ -1050,8 +1062,8 @@ public class DialogueSystem : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
                 {
-                    player.story_progress = 15;
-                    googleSignIn.story_progress = 15;
+                    player.story_progress = 14;
+                    googleSignIn.story_progress = 14;
                     if (music_pref == "yes")
                     {
                         audioSource.Stop();

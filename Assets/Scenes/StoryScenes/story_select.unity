@@ -526,8 +526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6.9000244, y: -7.380005}
-  m_SizeDelta: {x: -613.8, y: -21.94}
+  m_AnchoredPosition: {x: -6.9000244, y: -4.6650014}
+  m_SizeDelta: {x: -613.8, y: -27.370005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110482234
 MonoBehaviour:
@@ -549,7 +549,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 86963d6dfba9be546959214b61e02ed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 751a17e41472fc94499b376c1f4f6347, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &110482235
 CanvasRenderer:
@@ -1422,6 +1422,12 @@ MonoBehaviour:
   chapter4: {fileID: 16662019}
   chapter5: {fileID: 1603685754}
   chapter6: {fileID: 415323100}
+  gx_chapter1: {fileID: 2060758784}
+  gx_chapter2: {fileID: 272886230}
+  gx_chapter3: {fileID: 602875784}
+  gx_chapter4: {fileID: 1207287244}
+  gx_chapter5: {fileID: 906498410}
+  gx_chapter6: {fileID: 1704079289}
 --- !u!4 &409749320
 Transform:
   m_ObjectHideFlags: 0
@@ -4908,6 +4914,8 @@ MonoBehaviour:
   locked_gx: {fileID: 1498439808}
   DM_canvas: {fileID: 904329415}
   GX_canvas: {fileID: 768759785}
+  DM_theme: {fileID: 8300000, guid: cbcf4a72867eb834e88c2db074164599, type: 3}
+  GX_theme: {fileID: 8300000, guid: b00c21c4282715b4ba049b1ead70247e, type: 3}
 --- !u!4 &1794678849
 Transform:
   m_ObjectHideFlags: 0
@@ -5372,7 +5380,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1794678848}
-        m_MethodName: cancelButton
+        m_MethodName: cancelGXButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

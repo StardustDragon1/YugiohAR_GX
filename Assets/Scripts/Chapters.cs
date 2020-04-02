@@ -15,6 +15,16 @@ public class Chapters : MonoBehaviour
     public Text chapter5;
     public Text chapter6;
 
+
+    public Text gx_chapter1;
+    public Text gx_chapter2;
+    public Text gx_chapter3;
+    public Text gx_chapter4;
+    public Text gx_chapter5;
+    public Text gx_chapter6;
+
+
+
     void Start()
     {
         if (ThemeSongScript.Instance != null)
@@ -82,6 +92,72 @@ public class Chapters : MonoBehaviour
                 chapter5.text = "COMPLETED";
                 chapter6.text = "COMPLETED";
                 break;
+
+
+
+            case 8:
+                gx_chapter1.text = "";
+                gx_chapter2.text = "LOCKED";
+                gx_chapter3.text = "LOCKED";
+                gx_chapter4.text = "LOCKED";
+                gx_chapter5.text = "LOCKED";
+                gx_chapter6.text = "LOCKED";
+                break;
+            case 9:
+                gx_chapter1.text = "COMPLETED";
+                gx_chapter2.text = "";
+                gx_chapter3.text = "LOCKED";
+                gx_chapter4.text = "LOCKED";
+                gx_chapter5.text = "LOCKED";
+                gx_chapter6.text = "LOCKED";
+                break;
+            case 10:
+                gx_chapter1.text = "COMPLETED";
+                gx_chapter2.text = "COMPLETED";
+                gx_chapter3.text = "";
+                gx_chapter4.text = "LOCKED";
+                gx_chapter5.text = "LOCKED";
+                gx_chapter6.text = "LOCKED";
+                break;
+            case 11:
+                gx_chapter1.text = "COMPLETED";
+                gx_chapter2.text = "COMPLETED";
+                gx_chapter3.text = "COMPLETED";
+                gx_chapter4.text = "";
+                gx_chapter5.text = "LOCKED";
+                gx_chapter6.text = "LOCKED";
+                break;
+            case 12:
+                gx_chapter1.text = "COMPLETED";
+                gx_chapter2.text = "COMPLETED";
+                gx_chapter3.text = "COMPLETED";
+                gx_chapter4.text = "COMPLETED";
+                gx_chapter5.text = "";
+                gx_chapter6.text = "LOCKED";
+                break;
+            case 13:
+                gx_chapter1.text = "COMPLETED";
+                gx_chapter2.text = "COMPLETED";
+                gx_chapter3.text = "COMPLETED";
+                gx_chapter4.text = "COMPLETED";
+                gx_chapter5.text = "COMPLETED";
+                gx_chapter6.text = "";
+                break;
+            case 14:
+                gx_chapter1.text = "COMPLETED";
+                gx_chapter2.text = "COMPLETED";
+                gx_chapter3.text = "COMPLETED";
+                gx_chapter4.text = "COMPLETED";
+                gx_chapter5.text = "COMPLETED";
+                gx_chapter6.text = "COMPLETED";
+                break;
+
+
+
+
+
+
+
         }
     }
 
@@ -142,7 +218,7 @@ public class Chapters : MonoBehaviour
 
     public void onGXFirstChapter()
     {
-        if (googleSignIn.story_progress >= 9)
+        if (googleSignIn.story_progress >= 8)
         {
             SceneManager.LoadScene(13);
         }
@@ -153,7 +229,7 @@ public class Chapters : MonoBehaviour
 
     public void onGXSecondChapter()
     {
-        if (googleSignIn.story_progress >= 10)
+        if (googleSignIn.story_progress >= 9)
         {
             SceneManager.LoadScene(14);
         }
@@ -162,7 +238,7 @@ public class Chapters : MonoBehaviour
 
     public void onGXThirdChapter()
     {
-        if (googleSignIn.story_progress >= 11)
+        if (googleSignIn.story_progress >= 10)
         {
             SceneManager.LoadScene(15);
         }
@@ -172,7 +248,7 @@ public class Chapters : MonoBehaviour
 
     public void onGXFourthChapter()
     {
-        if (googleSignIn.story_progress >= 12)
+        if (googleSignIn.story_progress >= 11)
         {
             SceneManager.LoadScene(16);
         }
@@ -181,7 +257,7 @@ public class Chapters : MonoBehaviour
 
     public void onGXFifthChapter()
     {
-        if (googleSignIn.story_progress >= 13)
+        if (googleSignIn.story_progress >= 12)
         {
             SceneManager.LoadScene(17);
         }
@@ -190,7 +266,7 @@ public class Chapters : MonoBehaviour
 
     public void onGXSixthChapter()
     {
-        if (googleSignIn.story_progress >= 14)
+        if (googleSignIn.story_progress >= 13)
         {
             SceneManager.LoadScene(18);
         }

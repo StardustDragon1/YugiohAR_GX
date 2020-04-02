@@ -1732,7 +1732,7 @@ MonoBehaviour:
   state: 0
   player: {fileID: 2045397383}
   enemy: {fileID: 407524039}
-  story_chapter: 9
+  story_chapter: 8
   scaleall: {fileID: 1453799}
   specialattack: {fileID: 233256650}
   dialogueText2: {fileID: 2087225491}
@@ -3586,9 +3586,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 20000
+  m_MaxValue: 22000
   m_WholeNumbers: 0
-  m_Value: 20000
+  m_Value: 22000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

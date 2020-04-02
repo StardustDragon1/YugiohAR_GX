@@ -161,7 +161,7 @@ public class LoadMenu : MonoBehaviour
                 }
                 else
                 {
-                    if(googleSignIn.story_progress == 7)
+                    if(googleSignIn.story_progress == 7 || googleSignIn.story_progress == 14)
                     {
                         SceneManager.LoadScene(7);
                     } else
