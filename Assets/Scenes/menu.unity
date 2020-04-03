@@ -2429,7 +2429,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 791851141}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.53928393
+  m_Size: 0.5392839
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4654,7 +4654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 0.56249166
+  m_AspectRatio: 0.4615301
 --- !u!114 &2001773029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4727,8 +4727,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.012161}
-  m_SizeDelta: {x: 800, y: 1688.9}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 1731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016793811
 MonoBehaviour:
@@ -4971,7 +4971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 0.57520205
+  m_AspectRatio: 0.54460764
 --- !u!114 &2066314329
 MonoBehaviour:
   m_ObjectHideFlags: 0
