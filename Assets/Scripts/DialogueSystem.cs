@@ -133,44 +133,44 @@ public class DialogueSystem : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 8 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 8 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXFirstChapter());
         }
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 9 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 9 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXSecondChapter());
         }
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 10 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 10 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXThirdChapter());
         }
 
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 11 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 11 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXFourthChapter());
         }
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 12 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 12 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXFifthChapter());
         }
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 13 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 13 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXSixthChapter());
         }
 
 
-        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 14 && !videoplaying)
+        if (Input.GetMouseButtonDown(0) && googleSignIn.story_progress == 14 && !videoplaying && PlayerPrefs.GetString("Series") == "GX")
         {
             StartCoroutine(GXSeventhChapter());
         }

@@ -223,15 +223,15 @@ public class BattleSystem : MonoBehaviour
           
   
 
-            if (googleSignIn.story_progress == 7 || googleSignIn.story_progress == 15)
-            {
-                SceneManager.LoadScene(7);
-            }
-            else
-            {
+       //     if (googleSignIn.story_progress == 7 || googleSignIn.story_progress == 15)
+        //    {
+         //       SceneManager.LoadScene(7);
+           // }
+          //  else
+          //  {
                 SceneManager.LoadScene(5);
-            }
-
+        //    }
+        
 
         } 
         else if(state == BattleState.LOST)
@@ -239,14 +239,14 @@ public class BattleSystem : MonoBehaviour
             dialogueText.text = "You were defeated!";
             dialogueText2.text = "You were defeated!";
             yield return new WaitForSeconds(1f);
-            if (googleSignIn.story_progress == 7 || googleSignIn.story_progress == 15)
-            {
-                SceneManager.LoadScene(7);
-            }
-            else
-            {
-                SceneManager.LoadScene(5);
-            }
+            //     if (googleSignIn.story_progress == 7 || googleSignIn.story_progress == 15)
+            //    {
+            //       SceneManager.LoadScene(7);
+            // }
+            //  else
+            //  {
+            SceneManager.LoadScene(5);
+            //    }
         }
     }
 
