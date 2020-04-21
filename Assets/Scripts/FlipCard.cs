@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class FlipCard : MonoBehaviour
 {
 
+
+
     public int fps = 60;
     public float RotateDegreePerSecond = 180f;
     public bool IsFaceUp = false;
@@ -25,7 +27,7 @@ public class FlipCard : MonoBehaviour
 
     void Start()
     {
-        waitTime = 1.0f / fps;
+            waitTime = 1.0f / fps;
     }
 
     void OnMouseDown()

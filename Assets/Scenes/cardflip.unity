@@ -525,6 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807852725}
   - component: {fileID: 807852724}
+  - component: {fileID: 807852726}
   m_Layer: 0
   m_Name: BackGround
   m_TagString: Untagged
@@ -595,6 +596,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807852726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807852723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0dd3d7801cd2a74a968ba599222cfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DM_sprite: {fileID: 21300000, guid: 8e2a5e29c689f9e418ca43fda849b833, type: 3}
+  GX_sprite: {fileID: 21300000, guid: 1fcbcb973bce592479a56e33061f8d73, type: 3}
 --- !u!1 &873635311
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +798,7 @@ SpriteRenderer:
   m_Size: {x: 8.78, y: 12.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1332816961

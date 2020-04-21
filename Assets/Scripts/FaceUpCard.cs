@@ -43,12 +43,12 @@ namespace Assets.Scripts
 
 
             int random = UnityEngine.Random.Range(0, 21);
-         /*   while(googleSignIn.userdata[random] == true)
+            while(googleSignIn.userdata[random] == true)
             {
                  random = UnityEngine.Random.Range(0, 21);
-            } */
+            }
 
-            GetComponent<SpriteRenderer>().sprite = cards[0];
+            GetComponent<SpriteRenderer>().sprite = cards[random];
             googleSignIn.userdata[random] = true;
 
             Player player = new Player();
