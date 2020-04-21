@@ -166,7 +166,14 @@ public class LoadMenu : MonoBehaviour
                         SceneManager.LoadScene(7);
                     } else
                     {
-                        SceneManager.LoadScene(SceneIndex);
+                        if (googleSignIn.story_progress >= 7 && PlayerPrefs.GetString("Series") == "DM")
+                        {
+                            SceneManager.LoadScene(7);
+                        } else
+                        {
+                            SceneManager.LoadScene(SceneIndex);
+                        }
+                           
                     }
                   
                 }

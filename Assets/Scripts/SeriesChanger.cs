@@ -21,7 +21,8 @@ public class SeriesChanger : MonoBehaviour
 
     void Start()
     {
-        if(googleSignIn.story_progress>=7)
+
+        if (googleSignIn.story_progress>=7)
         {
             locked.enabled = false;
             locked_gx.enabled = false;
