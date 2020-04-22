@@ -43,13 +43,17 @@ namespace Assets.Scripts
 
 
             int random = UnityEngine.Random.Range(0, 21);
-            while(googleSignIn.userdata[random] == true)
+           while(googleSignIn.userdata[random] == true)
             {
                  random = UnityEngine.Random.Range(0, 21);
-            }
+            } 
 
             GetComponent<SpriteRenderer>().sprite = cards[random];
             googleSignIn.userdata[random] = true;
+
+
+            var bounds = GetComponent<SpriteRenderer>().sprite.bounds;
+            transform.localScale = new Vector3(1.45f, 1.45f, 1);
 
             Player player = new Player();
             RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
@@ -121,8 +125,7 @@ namespace Assets.Scripts
 
 
 
-            var bounds = GetComponent<SpriteRenderer>().sprite.bounds;
-            transform.localScale = new Vector3(1.1f, 1.1f, 1);
+          
         }
 
 
