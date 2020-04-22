@@ -53,7 +53,7 @@ namespace Assets.Scripts
 
 
             var bounds = GetComponent<SpriteRenderer>().sprite.bounds;
-            transform.localScale = new Vector3(1.45f, 1.45f, 1);
+            transform.localScale = new Vector3(1.43f, 1.42f, 1);
 
             Player player = new Player();
             RestClient.Get<Player>("https://yu-gi-oh-ar.firebaseio.com/" + googleSignIn.userid + ".json").Then(response =>
